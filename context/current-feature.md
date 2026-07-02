@@ -1,22 +1,42 @@
 # Current Feature
 
-<!-- Feature name and short description -->
+## Dashboard UI Phase 1
+
+Phase 1 of 3 for the dashboard UI layout. Sets up ShadCN UI, the `/dashboard` route, dark mode by default, a top bar with search and a new item button (display only), and placeholder sidebar/main areas.
 
 ## Status
 
-<!-- Not Started | In Progress | Completed -->
+Completed
 
 ## Goals
 
-<!-- Goals and requirements -->
+- ShadCN UI initialization and components
+- ShadCN component installation
+- Dashboard route at `/dashboard`
+- Main dashboard layout and any global styles
+- Dark mode by default
+- Top bar with search and new item button (display only)
+- Placeholder for sidebar and main area (just an `h2` with "Sidebar" and "Main" for now)
 
 ## Notes
 
-<!-- Any extra notes -->
+- Spec: `devstash/context/features/dashboard-phase-1-spec.md`
+- Reference screenshot: `devstash/context/screenshots/dashboard-ui-main.png`
+- Related: phase 2 (`dashboard-phase-2-spec.md`) and phase 3 (`dashboard-phase-3-spec.md`)
+- Mock data available at `src/lib/mock-data.ts`
 
 ## History
 
-<!-- Keep this updated -->
+### Dashboard UI Phase 1
+
+- Started: 2026-07-01.
+- Completed: 2026-07-02.
+- Status: Completed.
+- Initialized ShadCN UI (`components.json`, `src/lib/utils.ts`, CSS variables in `globals.css`).
+- Installed ShadCN components: `Button` and `Input`.
+- Set up dark mode by default via `next-themes` (`ThemeProvider` in root layout).
+- Created `/dashboard` route with a layout containing a top bar (search input + New Item button, display only) and `h2` placeholders for Sidebar and Main.
+- Build and lint pass.
 
 ### Initial Next.js Setup
 

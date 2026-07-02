@@ -37,10 +37,11 @@ In the item drawer there are two close icons. Fix that. Also, add syntax highlig
 ## Mock Data Prompt
 
 ```text
-We need a single source of truth for mock data to use for the dashboard UI until we implement a database. Read @context/project-overview.md and look at @devstash/context/screenshots/dashboard-ui-main.png to see the data structure.
+We need a single source of truth for mock data to use for the dashboard UI until we implement a database. Read @context/project-overview.md and look at @context/screenshots/dashboard-ui-main.png to see the data structure.
 
 Create a new file at src/lib/mock-data.ts and create a simple data structure for the dashboard UI. It should include items, collections, item types and a user for the current logged in user. Do not make this too complex. It is only for displaying data in the dashboard like the screenshot. Do not create helper methods, just a simple data file to import.
 ```
+
 
 ## First Feature (Dashboard Layout) Prompt
 
@@ -61,6 +62,7 @@ Set the current feature in @context/current-feature.md to completed, remove the 
 ```text
 Commit to the feature branch, merge to main, delete the feature branch and push to remote.
 ```
+
 
 ```text
 Create a new branch and implement the feature in the @context/current-feature.md file
