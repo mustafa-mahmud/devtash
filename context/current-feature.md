@@ -1,31 +1,37 @@
 # Current Feature
 
-## Dashboard UI Phase 1
-
-Phase 1 of 3 for the dashboard UI layout. Sets up ShadCN UI, the `/dashboard` route, dark mode by default, a top bar with search and a new item button (display only), and placeholder sidebar/main areas.
+None
 
 ## Status
 
-Completed
+<!-- Not Started|In Progress|Completed -->
+
+Not Started
 
 ## Goals
 
-- ShadCN UI initialization and components
-- ShadCN component installation
-- Dashboard route at `/dashboard`
-- Main dashboard layout and any global styles
-- Dark mode by default
-- Top bar with search and new item button (display only)
-- Placeholder for sidebar and main area (just an `h2` with "Sidebar" and "Main" for now)
+None
 
 ## Notes
 
-- Spec: `devstash/context/features/dashboard-phase-1-spec.md`
-- Reference screenshot: `devstash/context/screenshots/dashboard-ui-main.png`
-- Related: phase 2 (`dashboard-phase-2-spec.md`) and phase 3 (`dashboard-phase-3-spec.md`)
-- Mock data available at `src/lib/mock-data.ts`
+None
 
 ## History
+
+<!-- Keep this updated. Earliest to latest -->
+
+### Dashboard UI Phase 2
+
+- Started: 2026-07-02.
+- Completed: 2026-07-02.
+- Status: Completed.
+- Switched current feature context to phase 2 spec.
+- Installed ShadCN components: `Avatar`, `Separator`, `ScrollArea`, `Sheet`.
+- Added `src/lib/icons.tsx` with `getItemTypeIcon()` (maps ItemType `icon` strings to Lucide components) and `typeToSlug()` (converts ItemType names to `/items/TYPE` URL slugs).
+- Created `src/components/dashboard/sidebar.tsx` with a shared `SidebarContent` (item types linked to `/items/TYPE`, favorite collections, most recent collections, user avatar area at the bottom) and a desktop `Sidebar` that collapses to an icon rail via a drawer icon (`PanelLeftOpen`/`PanelLeftClose`).
+- Updated `src/components/dashboard/top-bar.tsx` to add a mobile menu button that opens a left-side `Sheet` drawer reusing `SidebarContent` (always a drawer on mobile view).
+- Replaced the placeholder sidebar in `src/app/dashboard/layout.tsx` with the new `Sidebar` component.
+- Build and lint pass.
 
 ### Dashboard UI Phase 1
 
